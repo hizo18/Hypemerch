@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HYPEMERCH — Drop. Flex. Repeat.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner" id="ticker">
+    <span>FREE ONGKIR DI ATAS 500K</span>
+    <span>★</span>
+    <span>BARU DROP: SUMMER KOLLECTION 2025</span>
+    <span>★</span>
+    <span>MEMBER EXCLUSIVE: -20% ALL ITEMS</span>
+    <span>★</span>
+    <span>TERBATAS! GRAB SEKARANG</span>
+    <span>★</span>
+    <span>FREE ONGKIR DI ATAS 500K</span>
+    <span>★</span>
+    <span>BARU DROP: SUMMER KOLLECTION 2025</span>
+    <span>★</span>
+    <span>MEMBER EXCLUSIVE: -20% ALL ITEMS</span>
+    <span>★</span>
+    <span>TERBATAS! GRAB SEKARANG</span>
+    <span>★</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar-hype">
+  <div class="container-xl">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="#" class="navbar-brand-hype">HYPE<span>MERCH</span></a>
+
+      <div class="d-none d-lg-flex align-items-center">
+        <a href="#" class="nav-link-hype active">Home</a>
+        <a href="#products" class="nav-link-hype">Shop</a>
+        <a href="#categories" class="nav-link-hype">Kategori</a>
+        <a href="#drop" class="nav-link-hype">Drops</a>
+        <a href="#" class="nav-link-hype">About</a>
+      </div>
+
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn-cart" id="cartBtn">
+          <i class="bi bi-bag-fill me-1"></i> CART
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <button class="d-lg-none btn btn-sm" style="color:#fff;background:transparent;border:1px solid #2a2a2a;" id="mobileMenuBtn">
+          <i class="bi bi-list fs-5"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="d-none d-lg-none pt-3 pb-2">
+      <a href="#" class="nav-link-hype d-block py-2">Home</a>
+      <a href="#products" class="nav-link-hype d-block py-2">Shop</a>
+      <a href="#categories" class="nav-link-hype d-block py-2">Kategori</a>
+      <a href="#drop" class="nav-link-hype d-block py-2">Drops</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-number">24</div>
+  <div class="container-xl hero-content">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="hero-label">★ Drop Season 2025</div>
+        <h1 class="hero-headline">
+          DROP.<br>
+          <span class="line-accent">FLEX.</span><br>
+          REPEAT.
+        </h1>
+        <p class="hero-sub">Koleksi streetwear eksklusif yang nggak bakal kamu temuin di tempat lain. Limited pieces. Zero compromise.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#products" class="btn-primary-hype">SHOP NOW →</a>
+          <a href="#drop" class="btn-outline-hype">UPCOMING DROP</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num" data-count="2400">0</div>
+            <div class="stat-label">Produk Terjual</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="148">0</div>
+            <div class="stat-label">Brand Partner</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="98">0</div>
+            <div class="stat-label">% Puas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS MARQUEE -->
+<section class="brands-section">
+  <div class="brands-track" id="brandsTrack">
+    <span class="brand-item">SUPREME</span>
+    <span class="brand-item">BAPE</span>
+    <span class="brand-item">PALACE</span>
+    <span class="brand-item">KITH</span>
+    <span class="brand-item">OFF-WHITE</span>
+    <span class="brand-item">FEAR OF GOD</span>
+    <span class="brand-item">STÜSSY</span>
+    <span class="brand-item">AMBUSH</span>
+    <span class="brand-item">SACAI</span>
+    <span class="brand-item">CACTUS PLANT</span>
+    <span class="brand-item">SUPREME</span>
+    <span class="brand-item">BAPE</span>
+    <span class="brand-item">PALACE</span>
+    <span class="brand-item">KITH</span>
+    <span class="brand-item">OFF-WHITE</span>
+    <span class="brand-item">FEAR OF GOD</span>
+    <span class="brand-item">STÜSSY</span>
+    <span class="brand-item">AMBUSH</span>
+    <span class="brand-item">SACAI</span>
+    <span class="brand-item">CACTUS PLANT</span>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories-section" id="categories">
+  <div class="container-xl">
+    <div class="row mb-5 animate-in">
+      <div class="col">
+        <div class="section-eyebrow">— Jelajahi</div>
+        <h2 class="section-title">SHOP BY<br>KATEGORI</h2>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-5 col-md-6 animate-in">
+        <div class="cat-card" style="aspect-ratio:1.1">
+          <div class="cat-bg" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);"></div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:80px;opacity:0.15;">👕</div>
+          <div class="cat-overlay"></div>
+          <div class="cat-info">
+            <span class="cat-tag">Terlaris</span>
+            <p class="cat-name">TEES &<br>HOODIES</p>
+            <p class="cat-count">240+ item</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 animate-in">
+        <div class="cat-card mb-3" style="aspect-ratio:0.85">
+          <div class="cat-bg" style="background:linear-gradient(135deg,#2d0036,#6b0057,#950055);"></div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:60px;opacity:0.18;">👟</div>
+          <div class="cat-overlay"></div>
+          <div class="cat-info">
+            <span class="cat-tag">New</span>
+            <p class="cat-name">SNEAKERS</p>
+            <p class="cat-count">88 item</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 animate-in">
+        <div class="cat-card mb-3" style="aspect-ratio:1.4">
+          <div class="cat-bg" style="background:linear-gradient(135deg,#003d2e,#005c3e,#007a50);"></div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:60px;opacity:0.18;">🎒</div>
+          <div class="cat-overlay"></div>
+          <div class="cat-info">
+            <span class="cat-tag">Trending</span>
+            <p class="cat-name">ACCESSORIES</p>
+            <p class="cat-count">120+ item</p>
+          </div>
+        </div>
+        <div class="cat-card" style="aspect-ratio:1.8">
+          <div class="cat-bg" style="background:linear-gradient(135deg,#2a1a00,#5c3a00,#8a5500);"></div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:60px;opacity:0.18;">🧢</div>
+          <div class="cat-overlay"></div>
+          <div class="cat-info">
+            <span class="cat-tag">Limited</span>
+            <p class="cat-name">HEADWEAR</p>
+            <p class="cat-count">56 item</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section" id="products">
+  <div class="container-xl">
+    <div class="row align-items-end mb-5 animate-in">
+      <div class="col-md-6">
+        <div class="section-eyebrow">— Koleksi</div>
+        <h2 class="section-title">PRODUK<br>PILIHAN</h2>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="all">Semua</button>
+          <button class="filter-tab" data-filter="tees">Tees</button>
+          <button class="filter-tab" data-filter="hoodies">Hoodies</button>
+          <button class="filter-tab" data-filter="accessories">Aksesoris</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3" id="productsGrid">
+      <!-- JS renders products here -->
+    </div>
+
+    <div class="text-center mt-5 animate-in">
+      <a href="#" class="btn-outline-hype">LOAD MORE PRODUCTS</a>
+    </div>
+  </div>
+</section>
+
+<!-- DROP SECTION -->
+<section class="drop-section" id="drop">
+  <div class="container-xl">
+    <div class="row justify-content-center animate-in">
+      <div class="col-lg-10">
+        <div class="drop-card">
+          <div class="drop-label">Upcoming Drop — 001</div>
+          <h2 class="drop-title">SHADOW<br>COLLECTIVE</h2>
+          <p class="drop-desc">Koleksi terbatas 150 pieces. Dark palette, premium materials, zero restock. Kalau kehabisan ya udah.</p>
+
+          <div class="countdown-wrap" id="countdown">
+            <div class="cd-block">
+              <span class="cd-num" id="cd-days">00</span>
+              <span class="cd-label">Hari</span>
+            </div>
+            <div class="cd-block">
+              <span class="cd-num" id="cd-hours">00</span>
+              <span class="cd-label">Jam</span>
+            </div>
+            <div class="cd-block">
+              <span class="cd-num" id="cd-mins">00</span>
+              <span class="cd-label">Menit</span>
+            </div>
+            <div class="cd-block">
+              <span class="cd-num" id="cd-secs">00</span>
+              <span class="cd-label">Detik</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn-dark-hype" id="notifyBtn">NOTIFY ME →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="container-xl">
+    <div class="row align-items-center animate-in">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <h2 class="newsletter-title">JANGAN<br>SAMPE<br><span>KETINGGALAN.</span></h2>
+        <p class="newsletter-sub">Subscribe dan dapetin akses early ke setiap drop. Eksklusif buat member.</p>
+      </div>
+      <div class="col-lg-5 offset-lg-1">
+        <div class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="email kamu..." id="emailInput" />
+          <button class="newsletter-btn" id="subscribeBtn">JOIN →</button>
+        </div>
+        <p class="mt-3" style="font-size:12px;color:#444;">
+          <i class="bi bi-shield-lock me-1"></i> No spam. Unsubscribe kapan aja.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container-xl">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">HYPE<span>MERCH</span></div>
+        <p class="footer-tagline mb-4">Drop. Flex. Repeat.</p>
+        <div>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-tiktok"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <p class="footer-heading">Shop</p>
+        <ul class="footer-links">
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Tees & Hoodies</a></li>
+          <li><a href="#">Sneakers</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <p class="footer-heading">Info</p>
+        <ul class="footer-links">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Cara Order</a></li>
+          <li><a href="#">Pengiriman</a></li>
+          <li><a href="#">Retur & Refund</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <p class="footer-heading">Hubungi Kami</p>
+        <ul class="footer-links">
+          <li><a href="#">halo@hypemerch.id</a></li>
+          <li><a href="#">+62 812-3456-7890</a></li>
+          <li><a href="#" style="color:#333;">Jl. Malioboro No. 88,<br>Yogyakarta 55213</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <p class="footer-copy mb-0">© 2025 HYPEMERCH. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#" style="font-size:12px;color:#333;text-decoration:none;">Privacy Policy</a>
+        <a href="#" style="font-size:12px;color:#333;text-decoration:none;">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// ── DATA ──
+const products = [
+  { id:1, brand:'HYPEMERCH', name:'Onyx Oversized Tee', price:259000, oldPrice:null, badge:'new', category:'tees', color:'#1a1a1a' },
+  { id:2, brand:'PALACE', name:'Tri-Ferg Hoodie Black', price:850000, oldPrice:1100000, badge:'sale', category:'hoodies', color:'#0d0d1a' },
+  { id:3, brand:'HYPEMERCH', name:'Acid Wash Crewneck', price:450000, oldPrice:null, badge:'hot', category:'hoodies', color:'#1a0d0d' },
+  { id:4, brand:'STÜSSY', name:'Stock Logo Cap Tan', price:320000, oldPrice:null, badge:'new', category:'accessories', color:'#1a150a' },
+  { id:5, brand:'HYPEMERCH', name:'Shadow Graphic Tee', price:229000, oldPrice:299000, badge:'sale', category:'tees', color:'#0a0a1a' },
+  { id:6, brand:'KITH', name:'Classic Boxy Fit Tee', price:380000, oldPrice:null, badge:'hot', category:'tees', color:'#0d1a0d' },
+  { id:7, brand:'HYPEMERCH', name:'Utility Crossbody Bag', price:520000, oldPrice:null, badge:'new', category:'accessories', color:'#1a1208' },
+  { id:8, brand:'AMBUSH', name:'Multi-Pocket Cargo', price:980000, oldPrice:1250000, badge:'sale', category:'accessories', color:'#100a1a' },
+];
+
+let cartCount = 0;
+let wishlist = new Set();
+let activeFilter = 'all';
+
+// ── PRODUCTS RENDER ──
+function renderProducts(filter = 'all') {
+  const grid = document.getElementById('productsGrid');
+  const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
+  
+  grid.innerHTML = filtered.map(p => `
+    <div class="col-6 col-md-4 col-lg-3 animate-in">
+      <div class="product-card" data-id="${p.id}">
+        <div class="product-img-wrap">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,${p.color},#0a0a0a);display:flex;align-items:center;justify-content:center;">
+            <span style="font-size:48px;opacity:0.25">${p.category === 'tees' ? '👕' : p.category === 'hoodies' ? '🧥' : '🎒'}</span>
+          </div>
+          ${p.badge ? `<span class="product-badge badge-${p.badge}">${p.badge.toUpperCase()}</span>` : ''}
+          <button class="product-wishlist ${wishlist.has(p.id) ? 'active' : ''}" data-wish="${p.id}">
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-heart-fill"></i>
+          </button>
+          <div class="product-quick-add" data-add="${p.id}">+ ADD TO CART</div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand">${p.brand}</div>
+          <div class="product-name">${p.name}</div>
+          <div class="product-price">
+            <span class="price-current">Rp ${p.price.toLocaleString('id-ID')}</span>
+            ${p.oldPrice ? `<span class="price-old">Rp ${p.oldPrice.toLocaleString('id-ID')}</span>` : ''}
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  // Re-bind events
+  grid.querySelectorAll('[data-add]').forEach(el => {
+    el.addEventListener('click', () => addToCart(+el.dataset.add));
+  });
+  grid.querySelectorAll('[data-wish]').forEach(el => {
+    el.addEventListener('click', (e) => { e.stopPropagation(); toggleWishlist(+el.dataset.wish, el); });
+  });
+
+  // Animate in
+  setTimeout(() => {
+    grid.querySelectorAll('.animate-in').forEach(el => el.classList.add('visible'));
+  }, 50);
+}
+
+// ── CART ──
+function addToCart(id) {
+  const p = products.find(x => x.id === id);
+  cartCount++;
+  document.getElementById('cartCount').textContent = cartCount;
+  showToast(`<i class="bi bi-bag-check-fill me-2"></i> ${p.name} ditambahkan!`);
+}
+
+// ── WISHLIST ──
+function toggleWishlist(id, btn) {
+  if (wishlist.has(id)) {
+    wishlist.delete(id);
+    btn.classList.remove('active');
+    showToast('<i class="bi bi-heart me-2"></i> Dihapus dari wishlist');
+  } else {
+    wishlist.add(id);
+    btn.classList.add('active');
+    showToast('<i class="bi bi-heart-fill me-2"></i> Disimpan ke wishlist!');
+  }
+}
+
+// ── FILTER ──
+document.getElementById('filterTabs').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-tab');
+  if (!btn) return;
+  document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  activeFilter = btn.dataset.filter;
+  renderProducts(activeFilter);
+});
+
+// ── TOAST ──
+function showToast(msg) {
+  const container = document.getElementById('toastContainer');
+  const toast = document.createElement('div');
+  toast.className = 'hype-toast';
+  toast.innerHTML = msg;
+  container.appendChild(toast);
+  setTimeout(() => toast.classList.add('show'), 10);
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 350);
+  }, 2500);
+}
+
+// ── COUNTDOWN ──
+function startCountdown() {
+  const target = new Date();
+  target.setDate(target.getDate() + 7);
+  target.setHours(20, 0, 0, 0);
+
+  function tick() {
+    const now = new Date();
+    const diff = target - now;
+    if (diff <= 0) return;
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-days').textContent = String(d).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(m).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(s).padStart(2,'0');
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+
+// ── COUNTER ANIMATION ──
+function animateCounters() {
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const target = +el.dataset.count;
+    const suffix = el.closest('.stat-item').querySelector('.stat-label').textContent.includes('%') ? '+' : '+';
+    let current = 0;
+    const step = Math.ceil(target / 60);
+    const interval = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = current.toLocaleString('id-ID') + (target === 98 ? '%' : '+');
+      if (current >= target) clearInterval(interval);
+    }, 20);
+  });
+}
+
+// ── SCROLL ANIMATIONS ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+
+// ── NEWSLETTER ──
+document.getElementById('subscribeBtn').addEventListener('click', () => {
+  const email = document.getElementById('emailInput').value;
+  if (!email || !email.includes('@')) {
+    showToast('<i class="bi bi-exclamation-circle me-2"></i> Masukkan email yang valid!');
+    return;
+  }
+  document.getElementById('emailInput').value = '';
+  showToast('<i class="bi bi-check-circle-fill me-2"></i> Sukses! Cek inbox kamu.');
+});
+
+// ── NOTIFY DROP ──
+document.getElementById('notifyBtn').addEventListener('click', () => {
+  showToast('<i class="bi bi-bell-fill me-2"></i> Kamu akan dapet notif pas drop!');
+});
+
+// ── CART BTN ──
+document.getElementById('cartBtn').addEventListener('click', () => {
+  if (cartCount > 0) showToast(`<i class="bi bi-bag me-2"></i> ${cartCount} item di cart kamu`);
+  else showToast('<i class="bi bi-bag me-2"></i> Cart masih kosong!');
+});
+
+// ── MOBILE MENU ──
+document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('d-none');
+});
+
+// ── INIT ──
+renderProducts();
+startCountdown();
+
+// Observe all animate-in elements
+document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+
+// Counter on hero visible
+const heroObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { animateCounters(); heroObserver.disconnect(); }
+  });
+}, { threshold: 0.5 });
+const statsEl = document.querySelector('.hero-stats');
+if (statsEl) heroObserver.observe(statsEl);
+</script>
+</body>
+</html>
